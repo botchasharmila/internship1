@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+ <title>My Portfolio</title>
+ <link rel="stylesheet" href="styles.css">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+ <style>
+ *{
+    margin: 0;
+    padding :0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:chocolate;
+    box-shadow: #000;
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 30px;
+
+}
+span{
+    color:burlywood;
+
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+.detel a{
+    background:burlywood;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    font-size: 30px
+}
+.images{
+    width:20%;
+    height: 30%;
+    position:absolute;
+    bottom:0;
+    right: 40%;
+    padding-top: 190px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(-50);
+    transition: bottom 1s,left 1s;
+}
+.images:hover .girl{
+    left: 45%;
+}
+.detel-sci a:hover,
+.hero a:hover{
+    color:#fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.detel-sci a:hover,
+.hero a:hover{
+    color:orange;
+} 
+
+ li {
+    float:left;
+    
+}
+.unli li a:hover,
+.detel-sci a:hover{
+    border: 2px solid white;
+    border-radius: 20px;
+    letter-spacing: 0.10em;
+    align-items: center;
+    font-weight: bold;
+}
+ .unli li a{
+    display:flex;
+    color: orangered;
+    text-align: center;
+    padding:  40px;
+    font-size: 50px;
+    align-items: center;
+        text-decoration: none;
+
+}
+ .unli li a:hover {
+        border: 2px solid white;
+        border-radius: 30px;
+        letter-spacing: 0.3000em;
+        font-weight: bold;
+        align-items: center;
+        padding: 40px 40px;
+}
+.conta{
+    position: relative;
+    width: 30%;
+    height: auto;
+    border-radius: 20% / 20%;
+}
+.image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    image-resolution: 100px;
+    border-radius: 20% / 20%;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: orange;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.conta:hover .overlay{
+    width:100%;
+    left:0;
+    border-radius: 20% / 20%;
+}
+.te{
+    color:black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    white-space:normal;
+}
+.pi{
+    display: flex;
+    justify-content: space-around;
+
+}
+.unli li{
+    align-items: center;
+    padding: 70px;
+    
+}
+.Project{
+    font-size: 80px;
+    color: burlywood;
+    padding: 150px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 90px;
+    padding-top: 0px;
+}
+.footer__links ul {
+  list-style: none;
+}
+
+.footer__links li {
+  margin-bottom: 5px;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #ffcc33; 
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  background-color: rgb(3, 30, 58,0.5);
+  color: #fff; 
+  padding: 30px;
+}
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__links{
+    margin-bottom: 20px;
+  }
+}
+
+
+</style>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="https://logowik.com/content/uploads/images/t_adobe-portfolio8664.jpg" class="Logo" width="100px" height="100px" style="margin-right: 300px;">
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1> Hi,I'm Sharmila<span>Botcha</span></h1>
+            <p>This my Portfolio website which shows all my
+                <br>Projects and Skills
+            </p>
+            <div class="detel-sci">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <a href="#">Download CV</a>
+        </div>
+        
+        <body style="background-color: #eff4fd;">
+          <p style="text-align: center; color:burlywood; font-size: 80px; font-weight: 300; padding: 190px; padding-bottom: 30px; font-style: italic;">About</p>
+            <p style="text-align: center; color:black; padding-top: 0px; font-size: 20px;" >This is Sharmila botcha.<br><br>
+         Studying B.tech 3rd year Computer Science Engineering in JNTU-GV UCEV,Vizianagaram.<br>
+         <br>I'm front end developer.As a front end developer i can design simple and efficient websites.
+            </p>
+            </body>
+        
+
+            <section id="Skills">
+
+                
+                <ul class="unli">
+                    <h1 style="text-align: center; color: burlywood; font-size: 80px;font-weight: 300; padding: 190px; padding-bottom: 30px; font-style: italic;">Skills</h1>
+                    <p style="text-align: center; color: black; font-size:20px; padding-top: 0px;"> I have learnt basics about the languages like c,c++,java,python,HTML,CSS.<br><br>
+                    use to creative approach to solve problems.Seeking a challenging position<br><br>
+                     in a technical organization that can provide me with suitable oppurtunity<br><br>
+                      to improve my skills and strengths in conjuction with the oraganizational<br><br>
+                       goals and to attain excellence through experience.
+                </p>
+             <li><a href="#">C <i class='bx bx-code-curly' ></i></a></li>
+             <li><a href="#"><i class='bx bxl-c-plus-plus' ></i></a></li>
+             <li><a href="#"><i class='bx bxl-python'></i></a></li>
+             <li><a href="#"><i class='bx bxs-file-html' ></i></a></li>
+               <li><a href="#"><i class='bx bxl-java' ></i></a></li>
+            </section>
+            <section class="Project" id="Project">
+                <br>
+                <br>
+                <div class="h1">Projects<br>
+                    <br>
+                    <p style="font-size: 20px; color: black;"> I have completed the projects like UBER travelling landing page<br><br>
+                                                                and the simple calculator by using some basics in the webdesiging.<br><br>
+                                                                The uber landing page is used to book a cab in which they drop atthe<br><br>
+                                                                given location safely There are enough enthusiasts that industry observers<br><br>
+                                                               are wondering why so many people choose Uber. Uber customers typically get<br><br>
+                                                               where they are going faster or cheaper than they would by taxis. Uber now<br><br>
+                                                                requires all prospective drivers to submit to motor vehicle and criminal background checks.
+<br> <br><br>
+            <br></p>
+                </div>
+                <div class="pi">
+                    <div class="conta">
+                        <img src="C:\Users\lpsgn\Desktop\images\landing page.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="te">UBER travelling landing page</div>
+                        </div>
+                    </div>
+                    <div class="conta">
+                        <img src="C:\Users\lpsgn\Desktop\images\calculator.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="overlay">
+                                <div class="te">Simple Calculator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            
+<table id="contact" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="white">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="4">
+                            <font face="Verdana" size="5"
+                                color="orange">
+                                Lets get in touch.Send me a Message:
+                            </font>
+                            <hr color="burlywood" width="110">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="1" width="50%" cellpadding="15"
+                                cellspacing="0" align="center" bgcolor="burlywood">
+                                <tr>
+                                    <td width="30%">
+                                        <hr color="black">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            Name
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            <input type="text" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            Email
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            <input type="email" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            Number
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            <input type="number" size="12">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            Message
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="black">
+                                            <textarea rows="5"
+                                                cols="37">
+                                            </textarea>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                          
+                                    </td>
+                                    <td width="70%">
+                                        <button type="Submit">
+                                            <font face="Verdana"
+                                                size="4" color="orangered">
+                                                <b>Submit</b>
+                                            </font>
+                                        </button>
+                                        <hr color="burlywood">
+                                        <hr color="burlywood">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+ 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                              
+                              
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="contact" id="contact" style="padding:100px; font-size: large;">
+        <h2>Contact Me</h2>
+        <hr class="context">
+    
+        <div class="contextt">
+          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right " style="font-size: 30px;"></i> Parvathipuram,Manyam</p>
+          <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style=" font-size: 30px"></i> Phone: 8985911154</p>
+          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="font-size: 30px"> </i> Email: sharmilanaidubotcha@gmail.com</p>
+        </div>
+    
+    
+        <div class="images">
+            <img src="https://jmiinsurance.com/wp-content/uploads/2021/01/bigstock-Business-Woman-Working-From-Ho-358804015.jpg" class="girl">
+        </div>
+</body>
+    </html>
